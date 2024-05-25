@@ -1,4 +1,4 @@
-from create_repository import NewRepository, ConnectRepository
+from .create_repository import NewRepository, ConnectRepository
 
 
 def main() -> None:
@@ -7,8 +7,6 @@ def main() -> None:
     if not con.search_repository(repository.path):
         repository.new_repository()
     con.connect()
-
-
 
 
 if __name__ == "__main__":

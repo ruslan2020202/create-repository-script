@@ -1,0 +1,28 @@
+[project]
+name = 'New_repository_package'
+version = "1.0.0"
+authors = [
+    {name='ruslan2020202', email='ruslan020507@gmail.com'}
+]
+requires-python = ">=3.9"
+description = 'A small script that automatically creates a remote repository on GitHub and connects to it'
+dependencies = [
+    "certifi==2024.2.2",
+    "cffi==1.16.0",
+    "charset-normalizer==3.3.2",
+    "cryptography==42.0.7",
+    "Deprecated==1.2.14",
+    "idna==3.7",
+    "pycparser==2.22",
+    "PyGithub==2.3.0",
+    "PyJWT==2.8.0",
+    "PyNaCl==1.5.0",
+    "python-dotenv==1.0.1",
+    "requests==2.32.2",
+    "typing_extensions==4.12.0",
+    "urllib3==2.2.1",
+    "wrapt==1.16.0"
+]
+
+[project.scripts]
+newrepo = "New_repository_package.__main__:main"
